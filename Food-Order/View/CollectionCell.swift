@@ -12,7 +12,7 @@ import UIKit
 class tblcolcell:UITableViewCell{
     
     static let id = "tblcolcell"
-    let imgarr = ["foo1","foo1","foo1","foo1","foo1"]
+    let imgarr = Data.imges
     
     let col = UICollectionView.MyCol()
     

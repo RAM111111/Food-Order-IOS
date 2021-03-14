@@ -69,3 +69,19 @@ extension UICollectionView {
       
     }
 }
+
+
+extension String {
+
+    static func fontAwesomeString(name: String) -> String {
+
+        switch name {
+        case "fa-close":
+           return "\u{f00d}"
+        case "fa-angle-left":
+            return"\u{f104}"
+        default:
+            return"\u{f556}"
+        }
+     }
+}

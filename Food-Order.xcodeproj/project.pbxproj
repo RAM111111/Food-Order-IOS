@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1142798625FA40F900E3DCD2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142798525FA40F900E3DCD2 /* Data.swift */; };
 		119E271225DEE3720079BB24 /* generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E271125DEE3720079BB24 /* generic.swift */; };
 		11A644D325D8913C0098FF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A644D225D8913C0098FF2D /* AppDelegate.swift */; };
 		11A644D525D8913C0098FF2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A644D425D8913C0098FF2D /* SceneDelegate.swift */; };
@@ -15,9 +16,16 @@
 		11A644DF25D8918C0098FF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A644DD25D8918C0098FF2D /* LaunchScreen.storyboard */; };
 		11A644E725D8E30E0098FF2D /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A644E625D8E30E0098FF2D /* Cells.swift */; };
 		11CA4A1A25E10720006950A6 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA4A1925E1071F006950A6 /* CollectionCell.swift */; };
+		11FB36F325EA181F006BC9C4 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB36F225EA181F006BC9C4 /* VC.swift */; };
+		11FB36F525EA185F006BC9C4 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB36F425EA185F006BC9C4 /* VC2.swift */; };
+		11FB36F725EA18AB006BC9C4 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB36F625EA18AB006BC9C4 /* VC3.swift */; };
+		11FB36FC25EA23CC006BC9C4 /* VCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB36FB25EA23CC006BC9C4 /* VCCell.swift */; };
+		11FB36FE25EA28EC006BC9C4 /* FontAwesomeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB36FD25EA28EC006BC9C4 /* FontAwesomeConverter.swift */; };
+		11FB370025EA8A47006BC9C4 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11FB36FF25EA89FB006BC9C4 /* fontawesome-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1142798525FA40F900E3DCD2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		119E271125DEE3720079BB24 /* generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generic.swift; sourceTree = "<group>"; };
 		11A644CF25D8913C0098FF2D /* Food-Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A644D225D8913C0098FF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,12 @@
 		11A644E025D8918C0098FF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A644E625D8E30E0098FF2D /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		11CA4A1925E1071F006950A6 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		11FB36F225EA181F006BC9C4 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		11FB36F425EA185F006BC9C4 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		11FB36F625EA18AB006BC9C4 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
+		11FB36FB25EA23CC006BC9C4 /* VCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCell.swift; sourceTree = "<group>"; };
+		11FB36FD25EA28EC006BC9C4 /* FontAwesomeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeConverter.swift; sourceTree = "<group>"; };
+		11FB36FF25EA89FB006BC9C4 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../Downloads/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1142798425FA40B000E3DCD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1142798525FA40F900E3DCD2 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		11A644C625D891380098FF2D = {
 			isa = PBXGroup;
 			children = (
@@ -60,17 +82,48 @@
 		11A644D125D8913C0098FF2D /* Food-Order */ = {
 			isa = PBXGroup;
 			children = (
-				11A644D225D8913C0098FF2D /* AppDelegate.swift */,
-				11A644D425D8913C0098FF2D /* SceneDelegate.swift */,
-				11A644D625D8913C0098FF2D /* ViewController.swift */,
-				11A644DB25D8918C0098FF2D /* Assets.xcassets */,
-				11A644DD25D8918C0098FF2D /* LaunchScreen.storyboard */,
+				1142798425FA40B000E3DCD2 /* Model */,
+				11FB36FA25EA22B1006BC9C4 /* Others */,
+				11FB36F925EA226F006BC9C4 /* View */,
+				11FB36F825EA214A006BC9C4 /* Controller */,
 				11A644E025D8918C0098FF2D /* Info.plist */,
-				11A644E625D8E30E0098FF2D /* Cells.swift */,
-				119E271125DEE3720079BB24 /* generic.swift */,
-				11CA4A1925E1071F006950A6 /* CollectionCell.swift */,
 			);
 			path = "Food-Order";
+			sourceTree = "<group>";
+		};
+		11FB36F825EA214A006BC9C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11A644D625D8913C0098FF2D /* ViewController.swift */,
+				11FB36F225EA181F006BC9C4 /* VC.swift */,
+				11FB36F425EA185F006BC9C4 /* VC2.swift */,
+				11FB36F625EA18AB006BC9C4 /* VC3.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11FB36F925EA226F006BC9C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				119E271125DEE3720079BB24 /* generic.swift */,
+				11A644E625D8E30E0098FF2D /* Cells.swift */,
+				11CA4A1925E1071F006950A6 /* CollectionCell.swift */,
+				11FB36FB25EA23CC006BC9C4 /* VCCell.swift */,
+				11FB36FD25EA28EC006BC9C4 /* FontAwesomeConverter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11FB36FA25EA22B1006BC9C4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				11A644D225D8913C0098FF2D /* AppDelegate.swift */,
+				11A644D425D8913C0098FF2D /* SceneDelegate.swift */,
+				11A644DB25D8918C0098FF2D /* Assets.xcassets */,
+				11A644DD25D8918C0098FF2D /* LaunchScreen.storyboard */,
+				11FB36FF25EA89FB006BC9C4 /* fontawesome-webfont.ttf */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FB370025EA8A47006BC9C4 /* fontawesome-webfont.ttf in Resources */,
 				11A644DF25D8918C0098FF2D /* LaunchScreen.storyboard in Resources */,
 				11A644DC25D8918C0098FF2D /* Assets.xcassets in Resources */,
 			);
@@ -143,12 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FB36F725EA18AB006BC9C4 /* VC3.swift in Sources */,
+				11FB36FE25EA28EC006BC9C4 /* FontAwesomeConverter.swift in Sources */,
 				11A644D725D8913C0098FF2D /* ViewController.swift in Sources */,
 				11A644E725D8E30E0098FF2D /* Cells.swift in Sources */,
 				119E271225DEE3720079BB24 /* generic.swift in Sources */,
+				11FB36FC25EA23CC006BC9C4 /* VCCell.swift in Sources */,
 				11A644D325D8913C0098FF2D /* AppDelegate.swift in Sources */,
+				1142798625FA40F900E3DCD2 /* Data.swift in Sources */,
 				11A644D525D8913C0098FF2D /* SceneDelegate.swift in Sources */,
 				11CA4A1A25E10720006950A6 /* CollectionCell.swift in Sources */,
+				11FB36F325EA181F006BC9C4 /* VC.swift in Sources */,
+				11FB36F525EA185F006BC9C4 /* VC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

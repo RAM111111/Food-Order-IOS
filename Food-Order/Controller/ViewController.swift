@@ -90,6 +90,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let img = Data.imges
         
         if indexPath.section == 0 && indexPath.row == 0{
             let cell4 = tbl.dequeueReusableCell(withIdentifier: tblcolcell.id) as! tblcolcell
@@ -97,9 +98,9 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
 
         }else if indexPath.section == 1 && indexPath.row == 0{
         let cell2 = tbl.dequeueReusableCell(withIdentifier: Cell2.id) as! Cell2
-            cell2.img1.image = UIImage(named: "foo1")
-            cell2.img2.image = UIImage(named: "foo1")
-            cell2.img3.image = UIImage(named: "foo1")
+            cell2.img1.image = UIImage(named: "offr")
+            cell2.img2.image = UIImage(named: "offr")
+            cell2.img3.image = UIImage(named: "offr")
             cell2.lbl1.text = "عروض"
             cell2.lbl2.text = "عروض"
             cell2.lbl3.text = "عروض"

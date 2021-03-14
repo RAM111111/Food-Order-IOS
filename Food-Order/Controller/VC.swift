@@ -11,16 +11,21 @@ import UIKit
 
 class VC: UIViewController {
     
+    let title1  = Data.title
+
+    
     let tbl:UITableView = {
         let tbl = UITableView()
         tbl.translatesAutoresizingMaskIntoConstraints = false
-        tbl.register(UITableViewCell.self, forCellReuseIdentifier: "Cell1id")
+        tbl.register(VCCell.self, forCellReuseIdentifier:VCCell.id )
         return tbl
         
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
 
         setuptbl()
         setupnav()
@@ -39,7 +44,7 @@ class VC: UIViewController {
     }
     
     func setupnav(){
-        view.backgroundColor = .white
+        view.backgroundColor = .lightGray
         navigationItem.title = "الطلبات"
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor :UIColor.darkGray]
@@ -54,52 +59,45 @@ class VC: UIViewController {
 
 extension VC:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return title1.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return title1[section].count
     }
     
-
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let ttbl = tableView.bounds.size
-//        func rt(title:String ) -> UIView{
-//            let hv = UIView()
-//        hv.backgroundColor = .white
-//    let lbl = UILabel()
-//        lbl.font = UIFont.boldSystemFont(ofSize: 18)
-//        lbl.textColor = UIColor.black
-//        lbl.text = title
-//        lbl.sizeToFit()
-//        hv.addSubview(lbl)
-//            return hv
-//        }
-//
-//        switch section {
-//        case 0:
-//            return rt(title: "")
-//        case 1:
-//            return rt(title: "عروض")
-//        case 2:
-//            return rt(title: "دائما في خدمتك")
-//        case 3:
-//            return rt(title: "المتاجر")
-//
-//        default:
-//            return rt(title: "النقل")
-//        }
-//    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if section == 0{
+            let vi :UIView = {
+                let vi = UIView(frame: CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 100)))
+                vi.backgroundColor = .lightGray
+                vi.alpha = 0.1
+                return vi
+                
+            }()
+            return vi
+        }
+        let vi :UIView = {
+            let vi = UIView(frame: CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 500)))
+            vi.backgroundColor = .lightGray
+            vi.alpha = 0.1
+            return vi
+            
+        }()
+        return vi
         
 
-        let cell = tbl.dequeueReusableCell(withIdentifier: "Cell1id")!
-        cell.textLabel?.text = "Hi"
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tbl.dequeueReusableCell(withIdentifier: VCCell.id) as! VCCell
+        cell.lbl.text = title1[indexPath.section][indexPath.row]
+        cell.img.image = UIImage(named: "left-arrow")
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 50
     }
 }

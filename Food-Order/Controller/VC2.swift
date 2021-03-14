@@ -17,6 +17,7 @@ class VC2: UIViewController {
         tbl.register(UITableViewCell.self, forCellReuseIdentifier: "Cell1id")
         return tbl
         
+        
     }()
 
     override func viewDidLoad() {
