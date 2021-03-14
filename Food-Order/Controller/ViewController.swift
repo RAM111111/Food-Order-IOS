@@ -127,51 +127,12 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 
-class VC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .cyan
-        navigationItem.title = "الطلبات"
-        navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor :UIColor.darkGray]
-        let search = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.edit, target: self, action: Selector(("Search")))
-        navigationItem.leftBarButtonItem = search
-        navigationItem.leftBarButtonItem?.tintColor = .cyan
-    }
 
 
-}
 
 
-class VC2: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemPink
-        navigationItem.title = "الرسائل"
-        navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor :UIColor.darkGray]
-        navigationItem.leftBarButtonItem?.tintColor = .cyan
-    }
 
 
-}
-
-
-class VC3: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .magenta
-        navigationItem.title = "المزيد"
-        navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor :UIColor.darkGray]
-        navigationItem.leftBarButtonItem?.tintColor = .cyan
-    }
-
-
-}
 
 
 
